@@ -1,28 +1,17 @@
-﻿using System;
-
-namespace SRP
+﻿namespace SRP
 {
     public class Book
     {
+        public string Title { get; }
+        public string Author { get; }
+        public string Code { get; }
 
-        public string Title { get ; }
-        public string Author { get ; }
-        public string Code { get ;  }
-        public string LibrarySector { get ; set; }
-        public string LibraryShelve { get ; set; }
-
-        public Book(String title, String author, String code)
+        public Book(string title, string author, string code)
         {
-            this.Title = title;
-            this.Author = author;
-            this.Code = code;
+            Title = title;
+            Author = author;
+            Code = code;
         }
-
-        public void ShelveBook(String sector, String shelve)
-        {
-            this.LibrarySector = sector;
-            this.LibraryShelve = shelve;
-        }
-
     }
 }
+    
